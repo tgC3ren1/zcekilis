@@ -1,0 +1,24 @@
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#0b1220;color:#e8f0ff;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding:24px}
+header{text-align:center;margin-bottom:12px}
+.logo{height:40px;margin-bottom:8px}
+h1{margin:8px 0 0;font-size:28px}
+.subtitle{opacity:.8;margin:4px 0 16px}
+
+.panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;padding:16px;border:1px solid #223;border-radius:12px;background:linear-gradient(180deg,#121c32,#0e1627)}
+.panel label{display:block;font-size:12px;opacity:.8;margin-bottom:4px}
+.panel input{width:100%;padding:10px 12px;border-radius:8px;border:1px solid #2a3550;background:#0e1524;color:#cfe3ff}
+.panel button{grid-column:1/-1;padding:12px;border-radius:10px;border:0;background:#2f80ed;color:#fff;font-weight:700;cursor:pointer}
+.config{grid-column:1/-1;opacity:.9;font-size:14px}
+
+.hidden{display:none}
+.game .bar{display:flex;justify-content:space-between;align-items:center;margin:16px 0;padding:8px 12px;background:#0e1524;border:1px solid #223;border-radius:10px}
+.grid{display:grid;gap:4px;justify-content:center;margin:16px 0}
+.cell{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:6px;background:#172036;border:1px solid #223;font-weight:700;cursor:pointer;user-select:none}
+.cell.sel{background:#2f80ed;border-color:#4ea6ff}
+.cell.word{background:#1e7a46;border-color:#2cc36b}
+
+.actions{display:flex;gap:8px;justify-content:center}
+.actions button{padding:12px 18px;border-radius:10px;border:0;background:#2cc36b;color:#061016;font-weight:800;cursor:pointer}
+#result{margin-top:12px;text-align:center;font-weight:700}
