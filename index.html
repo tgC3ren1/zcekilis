@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kelime Avı Çekilişi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="./logo.png" class="logo" alt="Logo" />
+      <h1>Kelime Avı</h1>
+      <p class="subtitle">Belirlenen kelimeleri en hızlı bulanlar, çekiliş şansını yakalar!</p>
+    </header>
+
+    <section class="panel">
+      <div>
+        <label>Takma adın</label>
+        <input id="name" placeholder="Örn: Ali" />
+      </div>
+      <div>
+        <label>İletişim (telefon/email/Telegram)</label>
+        <input id="contact" placeholder="@kullanici veya 5XX..." />
+      </div>
+      <div>
+        <label>Kullanıcı ID (zorunlu)</label>
+        <input id="userId" placeholder="Benzersiz ID (örn: telefon, telegram id)" />
+      </div>
+      <div>
+        <label>Etkinlik ID</label>
+        <input id="eventId" value="demo-event" />
+      </div>
+      <button id="loadBtn">Etkinliği Yükle</button>
+      <div id="configBox" class="config"></div>
+    </section>
+
+    <section id="game" class="game hidden">
+      <div class="bar">
+        <div>Hedef Kelimeler: <span id="targetWords"></span></div>
+        <div>Süre: <span id="timer">00:00.000</span></div>
+      </div>
+      <div id="grid" class="grid"></div>
+      <div class="actions">
+        <button id="submitBtn" disabled>Bitirdim (Gönder)</button>
+      </div>
+      <div id="result"></div>
+    </section>
+
+    <footer>
+      <small>© Kelime Avı – GitHub Pages sürümü</small>
+    </footer>
+  </div>
+
+  <script src="./runtime-config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
